@@ -1,4 +1,4 @@
-infermsfmetrop <- function(fbayes,data) {
+infermsfmetrop <- function(fbayes, data) {
     # Some manipulations to get the scale of the inv-gamma distribution for the
     # simulation of sigma^2, using eq. 9 in Tyralis and Koutsoyiannis (2014)
     logpfx <- function(f,x) {

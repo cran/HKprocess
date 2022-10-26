@@ -1,4 +1,4 @@
-ltzc <- function(r,x) {
+ltzc <- function(r, x) {
     nx <- as.integer(length(x))
     EPS <- .Machine$double.eps
 

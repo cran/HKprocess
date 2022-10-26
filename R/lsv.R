@@ -1,4 +1,4 @@
-lsv <- function(data,k1,p = 6,q = 0,interval = c(0.001,0.999)) {
+lsv <- function(data, k1, p = 6, q = 0, interval = c(0.001, 0.999)) {
     
     n <- length(data)
     k <- 1:k1

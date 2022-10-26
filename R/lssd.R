@@ -1,4 +1,4 @@
-lssd <- function(data,k1,p = 2,q = 0,interval = c(0.001,0.999)) {
+lssd <- function(data, k1, p = 2, q = 0, interval = c(0.001, 0.999)) {
     
     n <- length(data)
     k <- 1:k1

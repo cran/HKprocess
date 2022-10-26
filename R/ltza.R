@@ -1,4 +1,4 @@
-ltza <- function(r,x) {
+ltza <- function(r, x) {
     nx <- as.integer(length(x))
     EPS <- .Machine$double.eps
     # Call the ltza.c from the C library

@@ -1,4 +1,4 @@
-mleHK <- function(data,interval = c(0.0001,0.9999),
+mleHK <- function(data, interval = c(0.0001, 0.9999),
                   tol = .Machine$double.eps^0.25) {
     HKlikelihood <- function(H,x) {
         if (H <= 0) return(-Inf)

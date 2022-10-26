@@ -1,18 +1,23 @@
 \name{inferHmetrop}
+
 \alias{inferHmetrop}
+
 \title{
 Posterior distribution of the H parameter of the HKp, using a Metropolis
 algorithm.
 }
+
 \description{
 The function inferfmetrop is used to create a sample from the posterior
 distribution of H. The function uses the eq.10 in Tyralis and Koutsoyiannis
 (2014) and a Metropolis algorithm to make inference on H.
 }
+
 \usage{
 inferHmetrop(data, theta.init=0.7, burnin = 500, mcmc = 20000, thin = 1,
-tune = 1,verbose = 0,seed = NA)
+    tune = 1,verbose = 0,seed = NA)
 }
+
 \arguments{
 \item{data}{time series data }
 \item{theta.init}{Starting values for the sampling. Must be of the appropriate
@@ -39,29 +44,35 @@ vector of length six or NA (if NA a default seed of \code{rep(12345,6)} is
 used). The second element of list is a positive substream number. See the
 MCMCpack specification for more details.}
 }
+
 \value{
 An mcmc object that contains the posterior sample. This object can be summarized
 by functions provided by the coda package.
 }
+
 \note{The Metropolis algorithm uses the function MCMCmetrop1R from the package
 MCMCpack (Martin et al. 2011).}
-\author{Hristos Tyralis}
-\references{
-Martin A.D., Quinn K.M., Park J.H. (2011) MCMCpack: Markov chain Monte Carlo in
-R, \emph{Journal of Statistical Software} \bold{42(9)}, 1--21.
-\url{http://www.jstatsoft.org/v42/i09}.
 
-Tyralis H., Koutsoyiannis, D. (2014) A Bayesian statistical model for deriving
-the predictive distribution of hydroclimatic variables,
-\emph{Climate Dynamics} \bold{42(11-12)}, 2867--2883.
-\url{http://dx.doi.org/10.1007/s00382-013-1804-y}.
+\author{Hristos Tyralis}
+
+\references{
+Martin AD, Quinn KM, Park JH (2011) MCMCpack: Markov chain Monte Carlo in
+R. \emph{Journal of Statistical Software} \bold{42(9)}:1--21.
+\doi{10.18637/jss.v042.i09}.
+
+Tyralis H, Koutsoyiannis D (2014) A Bayesian statistical model for deriving
+the predictive distribution of hydroclimatic variables.
+\emph{Climate Dynamics} \bold{42(11-12)}:2867--2883.
+\doi{10.1007/s00382-013-1804-y}.
 }
+
 \examples{
 # Posterior distribution of the H parameter of the HKp for the Nile time series.
 
-samp.sim <- inferHmetrop(Nile,theta.init = 0.7,burnin = 500,mcmc = 500,thin = 1,
-tune = 1,seed = 12345)
+samp.sim <- inferHmetrop(Nile, theta.init = 0.7, burnin = 500, mcmc = 500,
+    thin = 1, tune = 1, seed = 12345)
 
-hist(samp.sim,breaks = 20,main = "Histogram of H",xlab = "H")
+hist(samp.sim, breaks = 20, main = "Histogram of H", xlab = "H")
 }
+
 \keyword{models}

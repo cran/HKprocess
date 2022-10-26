@@ -1,4 +1,4 @@
-mlear1 <- function(data,interval = c(-0.9999,0.9999),
+mlear1 <- function(data, interval = c(-0.9999, 0.9999),
                    tol = .Machine$double.eps^0.25) {
     ar1likelihood <- function(f1,x) {
         if (f1 <= -1) return(-Inf)

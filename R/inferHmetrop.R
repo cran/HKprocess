@@ -1,5 +1,5 @@
-inferHmetrop <- function(data,theta.init = 0.7,burnin = 500,mcmc = 20000,
-                         thin = 1,tune = 1,verbose = 0,seed = NA) {
+inferHmetrop <- function(data, theta.init = 0.7, burnin = 500, mcmc = 20000,
+                         thin = 1, tune = 1, verbose = 0, seed = NA) {
     # Set natural logarithm of eq. 10 in Tyralis and Koutsoyiannis (2014)
     logpHx <- function(H,x) {
         if (H <= 0) return(-Inf)

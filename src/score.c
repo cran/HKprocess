@@ -11,11 +11,11 @@ Changes the following vectors:
     S1[2]: Equal to sum(t[j] * (t[j]-1)) of eq 23.3.4 [2].
 
 References
-[1] Hamed KH (2008) Trend detection in hydrologic data: The Mann–Kendall trend
+[1] Hamed KH (2008) Trend detection in hydrologic data: The Mann-Kendall trend
     test under the scaling hypothesis. Journal of Hydrology 349(3-4):350-363.
     doi:10.1016/j.jhydrol.2007.11.009
 [2] Hipel KW, McLeod AI (1994) Time series modelling of water resources and
-    environmental systems. Elsevier. Amsterdam
+    environmental systems. Elsevier, Amsterdam
 *******************************************************************************/
 
 #include "trenchR.h"

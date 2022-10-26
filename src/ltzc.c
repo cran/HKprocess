@@ -51,9 +51,11 @@ if (_fault1 != 0)
 		return;
 	}
 else
+    {
     fault[0] = 0;// The program is normally performed
     y[1] = levDet(n-1,e1);// Computation of the logarithm of the determinant.
 	y[0] = dot(n,x,y1);// s3 equals to t(x) * inv(R) * x.
 	free_vector(y1);
 	free_vector(e1);
+    }
 }

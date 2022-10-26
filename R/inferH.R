@@ -1,4 +1,4 @@
-inferH <- function(data,n,add = 0.001,minu = 0.001,maxu = 0.999) {
+inferH <- function(data, n, add = 0.001, minu = 0.001, maxu = 0.999) {
     # Set natural logarithm of eq. 10 in Tyralis and Koutsoyiannis (2014)
     logphxfunction <- function(H,x) {
         size = length(x)

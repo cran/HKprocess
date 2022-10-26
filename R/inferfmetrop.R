@@ -1,5 +1,5 @@
-inferfmetrop <- function(data,theta.init = 0.7,burnin = 500,mcmc = 20000,
-                         thin = 1,tune = 1,verbose = 0,seed = NA) {
+inferfmetrop <- function(data, theta.init = 0.7, burnin = 500, mcmc = 20000,
+                         thin = 1, tune = 1, verbose = 0, seed = NA) {
     # Set natural logarithm of eq. 10 in Tyralis and Koutsoyiannis (2014)
     logpfx <- function(f,x) {
         if (f <= -1) return(-Inf)

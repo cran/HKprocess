@@ -53,6 +53,7 @@ if (_fault1 != 0)
 		return;
 	}
 else
+    {
     fault[0] = 0;// The program is normally performed
     y2 = Vector(n);
     e2 = Vector(n-1);
@@ -75,4 +76,5 @@ else
 	free_vector(e1);
 	free_vector(e2);
     free_vector(e3);
+   }
 }

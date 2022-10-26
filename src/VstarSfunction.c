@@ -9,7 +9,7 @@ Changes vector y:
     y[0]: Equal to V(S) of eq 16 [1].
 
 References
-[1] Hamed KH (2008) Trend detection in hydrologic data: The Mann–Kendall trend
+[1] Hamed KH (2008) Trend detection in hydrologic data: The Mann-Kendall trend
     test under the scaling hypothesis. Journal of Hydrology 349(3-4):350-363.
     doi:10.1016/j.jhydrol.2007.11.009
 *******************************************************************************/
